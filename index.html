@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dino GAme</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="game">
+    <h4 id="scoreWrapper">Score: <span id="score">0</span></h4>
+    <div id="path"></div>
+    <div id="dino"></div>
+    <div id="cactus"></div>
+</div>
+
+<div class="container">
+    <h3 id="highScore"></h3>
+
+    <a id="button" class="waves-effect waves-light btn-large">Очистить таблицу</a>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Результат</th>
+            <th>Дата</th>
+        </tr>
+        </thead>
+
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+</div>
+
+<script src="javascript/disable_scroll.js"></script>
+<script src="javascript/app.js" type="module"></script>
+</body>
+</html>
